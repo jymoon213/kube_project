@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: facility_backend
+    image: hul0810/fastapi_backend:0.0
+    command: bash -c "uvicorn main:app --host 0.0.0.0 --port 8000 --reload"
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+    restart: always
