@@ -57,5 +57,3 @@ class Users(Base):
     auth = Column(String(1), nullable=False)
     bid = Column(String(4))
 
-
-    
